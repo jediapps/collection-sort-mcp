@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "com.jediapps/collection-sort",
+  "name": "com.jediapps/jedi-collection-sort",
   "title": "Jedi Collection Sort",
   "description": "Manage Shopify collection sorting by chat: strategies, assignments, and on-demand sorts.",
   "version": "1.0.0",
