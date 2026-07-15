@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.jediapps/collection-sort",
+  "title": "Jedi Collection Sort",
+  "description": "Manage Shopify collection sorting from AI assistants: list and inspect sorting strategies, assign strategies to collections, toggle sorting, and trigger on-demand sorts.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apps.shopify.com/jedi-collection-sort",
+  "repository": {
+    "url": "https://github.com/jediapps/collection-sort-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://REPLACE-WITH-PRODUCTION-MCP-DOMAIN/mcp"
+    }
+  ]
+}
