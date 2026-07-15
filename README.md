@@ -32,8 +32,8 @@ All tools are bound to the authenticated shop; a connection can only ever see an
 
 ## Connect from claude.ai / Claude Desktop (OAuth)
 
-1. In the app, open **Settings → Integrations** and copy your **MCP server URL**, then generate a **connect code** (one-time, expires in 10 minutes).
-2. In claude.ai: **Settings → Connectors → Add custom connector**, paste the MCP server URL.
+1. In the app, open **Settings → Integrations** and generate a **connect code** (one-time, expires in 10 minutes).
+2. In claude.ai: **Settings → Connectors → Add custom connector**, paste `https://api.collection-sort.jediapps.com/mcp`.
 3. Claude opens the consent page — enter your connect code to link your store.
 
 The server is a full OAuth 2.1 authorization server (dynamic client registration, PKCE, refresh-token rotation), so any OAuth-capable MCP client works the same way.
@@ -43,7 +43,7 @@ The server is a full OAuth 2.1 authorization server (dynamic client registration
 Generate an API key in **Settings → Integrations** (shown once, stored hashed), then:
 
 ```bash
-claude mcp add collection-sort --transport http <your MCP server URL>/mcp \
+claude mcp add collection-sort --transport http https://api.collection-sort.jediapps.com/mcp \
   --header "Authorization: Bearer jcs_..."
 ```
 
@@ -55,11 +55,11 @@ claude mcp add collection-sort --transport http <your MCP server URL>/mcp \
 
 ## REST API
 
-The same operations are available as a REST API (`/public-api/v1`) with Bearer API-key auth — strategies, collections, sort triggering, and job status. See the [documentation](https://docs.push-down-products.jediapps.com) for endpoints and error codes.
+The same operations are available as a REST API (`https://api.collection-sort.jediapps.com/public-api/v1`) with Bearer API-key auth — strategies, collections, sort triggering, and job status. See the [documentation](https://jediapps.com/docs/public-api/) for endpoints and error codes.
 
 ## Support
 
-- Docs & FAQ: [docs.push-down-products.jediapps.com](https://docs.push-down-products.jediapps.com)
+- Docs & FAQ: [jediapps.com/docs](https://jediapps.com/docs/)
 - App listing & support: [apps.shopify.com/jedi-collection-sort](https://apps.shopify.com/jedi-collection-sort)
 
 ---
